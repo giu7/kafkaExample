@@ -10,5 +10,8 @@ Then launch kafka server with
 bin/kafka-server-start.sh config/server.properties
 
 Now create the two topics the application needs with the following commands
+
 bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic testTopic
+
+
 bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic testTopicUser
